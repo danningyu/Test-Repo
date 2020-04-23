@@ -1,2 +1,26 @@
 Some more text yay
 4th file
+
+To setup:
+git clone ...
+
+To start work on a feature:
+git checkout master
+git pull origin master //sync your master with the remote
+
+Create a new branch on github for your new feature, call it new_feature
+git checkout -b new_feature
+
+make some changes...
+git add <files>
+git commit <commit msg>
+
+git push origin new_feature
+
+Then go to Github, open pull request to merge into master. Then approve pull request
+to have it merged into master. Once merged, delete the branch. Once you're notified
+that your change was approved, to start work on next feature,
+git checkout master
+git pull origin master
+git branch -d new_feature
+git remote prune origin 
